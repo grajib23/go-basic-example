@@ -15,14 +15,14 @@ func main() {
 	fmt.Println("m[key1] = ", m["key1"])
 	
 	/**
-	 * throw Exception
+	 * Compiler Error
 	 * cannot use "test" (type string) as type int in assignment
 	*/
 	// m["key3"] = "test"
 
 
 	 /**
-	 * throw Exception
+	 * Compiler Error
 	 * cannot use 7 (type int) as type string in assignment
 	*/
 
