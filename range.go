@@ -16,16 +16,17 @@ func main() {
 
 	for i, num := range nums {
 		if i ==2 {
-			fmt.Println("i and num = ", i, num)
+			fmt.Printf("i = %d and num = %d\n", i, num)
 		}
 	}
 
 	m := map[string]int{"key1" : 1, "key2" : 2, "key3" : 3}
 	for key, value := range m {
-		fmt.Println("key and value pf m = ", key, value)
+		fmt.Printf("key = %s and value = %d\n", key, value)
 	}
 
-	for k,v := range "AB" {
-		fmt.Println("k and v = ", k, v)
+	// range on strings iterates over Unicode code points.
+	for i,v := range "AB" {
+		fmt.Printf("i = %d and v = %d\n", i, v)
 	}
 }
